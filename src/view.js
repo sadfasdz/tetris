@@ -63,16 +63,16 @@ export default class View {
   }
 
   renderPauseScreen() {
-    this.context.fillStyle = "rgba(0, 0, 0, 0.75)";
-    this.context.fillRect(0, 0, this.playfieldWidth, this.playfieldHeight);
+    this.context.fillStyle = "#fff";
+    this.context.fillRect(0, 0, this.width, this.height);
 
-    this.context.fillStyle = "white";
+    this.context.fillStyle = "black";
     this.context.font = "18px 'Times New Roman'";
     this.context.textAlign = "center";
     this.context.textBaseline = "middle";
     this.context.fillText(
       "Press ENTER to Resume",
-      this.width / 3,
+      this.width / 2,
       this.height / 2
     );
   }
